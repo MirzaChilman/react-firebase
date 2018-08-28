@@ -13,7 +13,7 @@ class App extends Component {
 
   componentDidMount() {
     this.dataRef = database.ref('dataReferensi/Baru');
-    // database.on('value', snapshot => {
+    // database.on('value', snapshot => {asdsa
     this.dataRef.on('value', snapshot => {
       snapshot.ref();
 
@@ -22,7 +22,6 @@ class App extends Component {
       });
     });
   }
-
   handleChange = e => {
     const newData = e.target.value;
     this.setState({
